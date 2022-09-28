@@ -1,9 +1,11 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
     public int playerNumber = 1;
-    public float speed = 15;
+    public float speed;
     // Update is called once per frame
     void Update()
     {
@@ -16,5 +18,6 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.Translate(new Vector3(0, Input.GetAxis("Player2") * speed * Time.deltaTime));
         }
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -7.5f, 7.5f), transform.position.z);
     }
 }

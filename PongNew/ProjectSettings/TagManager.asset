@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Wall
+  - Paddle
+  - Goal
+  - Goal2
+  - Paddle2
+  - SpeedZone
+  - SpeedZone2
   layers:
   - Default
   - TransparentFX
