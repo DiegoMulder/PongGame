@@ -18,11 +18,13 @@ public class ScoreScript : MonoBehaviour
 	{
         Player1Score++;
         P1Text.text = Player1Score.ToString();
+        BackGround.scoreP1 -= 1;
 	}
     public void AddP2Score()
 	{
         Player2Score++;
         P2Text.text = Player2Score.ToString();
+        BackGround.scoreP2 -= 1;
     }
 	private void Update()
 	{
